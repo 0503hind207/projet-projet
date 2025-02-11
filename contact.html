@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background-color: #CAF0F8;
+    text-align: center;
+    color: #03045E;
+}
+
+.contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 30px;
+    background-color:#ffeb3b;
+    color:#03045E;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffeb3b;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need more information, feel free to reach out.</p>
+    <p>Email: support@applestore.com</p>
+    <p>Phone: 01 23 45 67 89</p>
+    <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="pieces">Number of Pieces</label>
+        <input type="number" id="pieces" name="pieces" placeholder="Enter the number of pieces" min="1" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</body>
+</html>

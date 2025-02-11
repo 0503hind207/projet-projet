@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+/* About Section */
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #0077B6;
+    color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+/* Image Animation Section */
+.animated-image {
+    text-align: center;
+    padding: 30px 20px;
+    background-color:#0077B6 ;
+}
+
+.animated-image h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 30em;
+    border-radius: 8px; /* Optional: rounded corners for the container */
+}
+
+/* Apply continuous rotation animation on the image */
+.image-container img {
+    width: 400px;
+    height: 400px;
+    translate: 0 50px;
+    animation: rotateImage 10s linear infinite;  /* Rotate image continuously */
+    border-radius: 50%; /* Optional: rounded corners for the image */
+}
+
+/* Rotation animation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* start from the initial position */
+    }
+    100% {
+        transform: rotate(360deg); /* rotate 360 degrees */
+    }
+}
+
+/* Optional: Add shadow to the image container */
+.image-container img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+     </style>
+</head>
+<body>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Our Store</h2>
+            <p><h3>Welcome to our site dedicated to the world of iPhones! We are here to provide you with the latest news, in-depth reviews, and the best tips about Apple devices. Whether you are looking to buy a new iPhone or seeking solutions to any issues you may face, we offer all the information you need, with accuracy and reliability.
+
+                Our goal is to deliver comprehensive content covering every aspect of the iPhone, from technical specifications to daily tips for maximizing your device’s potential. We also provide comparisons between different models, analysis of new updates, and solutions to common problems.
+                
+                We are here to support you on your Apple journey and always strive to help you make the best decisions.
+                
+                </h3></p>
+             <!-- Image Rotation Animation Section -->
+    <section id="animated-image" class="animated-image">
+        <div class="image-container">
+            <img src="photo/animationn.jpg" alt="Latest iPhone">
+        </div>
+    </section>
+        </section>
+</body>
+</html>

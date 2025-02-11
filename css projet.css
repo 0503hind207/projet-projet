@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #CAF0F8;
+    color: #03045E;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color:#03045E ;
+    color:  #CAF0F8;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Section for iPhones */
+#iphones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/* Styling for individual iPhone items */
+.iphone {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iphone img {
+    width: 100%;
+    height: 55%;
+    border-radius: 8px;
+}
+
+.iphone h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.iphone p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Hover Effect on iPhone Items */
+.iphone:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #03045E;
+    color:#CAF0F8;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Second Footer */
+footer:nth-of-type(2) {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 10px;
+}
